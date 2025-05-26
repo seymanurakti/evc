@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="assets/css/style/style.scss">
-<h1>{{ site.title }}</h1>
+<h1>Abstract</h1>
 
-{{ site.description }}
+Expressive voice conversion aims to transfer both speaker identity and expressive attributes from a target speech to a given source speech. In this work, we improve over a self-supervised, non-autoregressive framework with a conditional variational autoencoder, focusing on reducing source timbre leakage and improving linguistic-acoustic disentanglement for better style transfer. To minimize style leakage, we use multilingual discrete speech units for content representation and reinforce embeddings with augmentation-based similarity loss and mix-style layer normalization. To enhance expressivity transfer, we incorporate local F0 information via cross-attention and extract style embeddings enriched with global pitch and energy features. Experiments show our model outperforms baselines in emotion and speaker similarity, demonstrating superior style adaptation and reduced source style leakage.
 
-<h2>Neutral samples:</h2>
+<h2>Neutral:</h2>
    <table class="tg"><thead>
   <tr>
     <th class="tg-73oq">Source Audio</th>
@@ -68,8 +68,8 @@
 </tbody></table>
 
 
-<h2>Angry samples:</h2>
-    
+<h2>Angry:</h2>
+English-to-English    
 <table class="tg"><thead>
   <tr>
     <th class="tg-73oq">Source Audio</th>
@@ -119,7 +119,18 @@
     <td class="tg-73oq">
     <audio src="ours/angry/5142_33396_000052_000000_to_03-01-05-01-02-01-13.wav" type="audio/wav" controls></audio>
     </td>
-  </tr><tr>
+  </tr>
+</tbody></table>
+
+Cross-lingual
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-73oq">Source Audio</th>
+    <th class="tg-73oq">Target Audio</th>
+    <th class="tg-73oq">Synthesized Audio</th>
+  </tr></thead>
+<tbody>
+  <tr>
     <td class="tg-73oq">
     <audio src="source_samples/1320_122617_000059_000000.wav" type="audio/wav" controls></audio>
     </td>
@@ -164,7 +175,8 @@
   </tr>
 </tbody></table>
 
-<h2>Happy samples:</h2>
+<h2>Happy:</h2>
+English-to-English
 <table class="tg"><thead>
   <tr>
     <th class="tg-73oq">Source Audio</th>
@@ -203,7 +215,18 @@
     <td class="tg-73oq">
     <audio src="ours/happy/1995_1826_000035_000000_to_03-01-03-02-02-02-21.wav" type="audio/wav" controls></audio>
     </td>
-  </tr><tr>
+  </tr>
+</tbody></table>
+
+Cross-lingual
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-73oq">Source Audio</th>
+    <th class="tg-73oq">Target Audio</th>
+    <th class="tg-73oq">Synthesized Audio</th>
+  </tr></thead>
+<tbody>
+<tr>
     <td class="tg-73oq">
     <audio src="source_samples/2830_3979_000018_000001.wav" type="audio/wav" controls></audio>
     </td>
@@ -246,10 +269,9 @@
   </tr>
 </tbody></table>
 
-
-<h2>Sad samples:</h2>
-    
-   <table class="tg"><thead>
+<h2>Sad:</h2>
+English-to-English    
+<table class="tg"><thead>
   <tr>
     <th class="tg-73oq">Source Audio</th>
     <th class="tg-73oq">Target Audio</th>
@@ -287,7 +309,18 @@
     <td class="tg-73oq">
     <audio src="ours/sad/7176_88083_000015_000004_to_03-01-04-01-02-02-23.wav" type="audio/wav" controls></audio>
     </td>
-  </tr><tr>
+  </tr>
+</tbody></table>
+
+Cross-lingual Samples:
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-73oq">Source Audio</th>
+    <th class="tg-73oq">Target Audio</th>
+    <th class="tg-73oq">Synthesized Audio</th>
+  </tr></thead>
+<tbody>
+  <tr>
     <td class="tg-73oq">
     <audio src="source_samples/260_123288_000032_000002.wav" type="audio/wav" controls></audio>
     </td>
