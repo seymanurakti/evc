@@ -1,5 +1,7 @@
 title: "Towards Better Disentanglement in Non-Autoregressive Zero-Shot Expressive Voice Conversion"
-description: Demo page for anonymus Interspeech 2025 submission
+description: |
+          Seymanur Akti, Tuan-Nam Nguyen, Alexander Waibel
+          Interactive Systems Lab, Karlsruhe Institute of Technology, Germany
 theme: jekyll-theme-cayman
 
 sass:
